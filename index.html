@@ -11,7 +11,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -24,35 +24,36 @@
             theme: {
                 extend: {
                     colors: {
-                        'navy': '#0B1A2F',
+                        'wine': '#722F37',
                     },
                     fontFamily: {
-                        'inter': ['Inter', 'sans-serif'],
+                        'montserrat': ['Montserrat', 'sans-serif'],
                     }
                 }
             }
         }
     </script>
 </head>
-<body class="font-inter bg-white text-gray-900">
+<body class="font-montserrat bg-white text-gray-900">
     
     <!-- Fixed Header -->
     <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-sm z-50 transition-all duration-300">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <div class="text-2xl font-bold text-navy">
+                <div class="text-2xl font-bold text-wine">
                     ORE IBOUKOUN GAUTHIER
                 </div>
                 
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex space-x-8">
-                    <a href="#accueil" class="nav-link text-gray-700 hover:text-navy transition-colors duration-300">Accueil</a>
-                    <a href="#projets" class="nav-link text-gray-700 hover:text-navy transition-colors duration-300">Projets</a>
-                    <a href="#contact" class="nav-link text-gray-700 hover:text-navy transition-colors duration-300">Contact</a>
+                    <a href="#accueil" class="nav-link text-gray-700 hover:text-wine transition-colors duration-300">Accueil</a>
+                    <a href="#a-propos" class="nav-link text-gray-700 hover:text-wine transition-colors duration-300">À propos</a>
+                    <a href="#projets" class="nav-link text-gray-700 hover:text-wine transition-colors duration-300">Projets</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-wine transition-colors duration-300">Contact</a>
                 </div>
                 
                 <!-- Mobile Menu Button -->
-                <button class="md:hidden text-navy" id="mobile-menu-btn">
+                <button class="md:hidden text-wine" id="mobile-menu-btn">
                     <i class="fas fa-bars text-xl"></i>
                 </button>
             </div>
@@ -60,16 +61,17 @@
             <!-- Mobile Navigation -->
             <div class="md:hidden mt-4 pb-4 hidden" id="mobile-menu">
                 <div class="flex flex-col space-y-4">
-                    <a href="#accueil" class="nav-link text-gray-700 hover:text-navy transition-colors duration-300">Accueil</a>
-                    <a href="#projets" class="nav-link text-gray-700 hover:text-navy transition-colors duration-300">Projets</a>
-                    <a href="#contact" class="nav-link text-gray-700 hover:text-navy transition-colors duration-300">Contact</a>
+                    <a href="#accueil" class="nav-link text-gray-700 hover:text-wine transition-colors duration-300">Accueil</a>
+                    <a href="#a-propos" class="nav-link text-gray-700 hover:text-wine transition-colors duration-300">À propos</a>
+                    <a href="#projets" class="nav-link text-gray-700 hover:text-wine transition-colors duration-300">Projets</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-wine transition-colors duration-300">Contact</a>
                 </div>
             </div>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section id="accueil" class="min-h-screen flex items-center bg-gradient-to-br from-navy to-navy/90 text-white pt-20">
+    <section id="accueil" class="min-h-screen flex items-center bg-gradient-to-br from-wine to-wine/90 text-white pt-20">
         <div class="container mx-auto px-6">
             <div class="max-w-4xl mx-auto text-center">
                 <div class="animate-fade-in">
@@ -89,8 +91,107 @@
                         et élève l'industrie de la mode à travers l'Afrique.
                     </p>
                     
-                    <a href="#contact" class="inline-block bg-white text-navy px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105">
+                    <a href="#contact" class="inline-block bg-white text-wine px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105">
                         Me Contacter
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="a-propos" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold text-wine mb-6">À Propos</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Découvrez l'homme derrière la vision de l'excellence dans la mode africaine
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div class="bg-gradient-to-br from-wine to-wine/80 rounded-2xl p-8 text-white">
+                            <div class="text-center mb-6">
+                                <div class="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-user-tie text-3xl text-white"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold">ORE IBOUKOUN GAUTHIER</h3>
+                                <p class="text-white/80">Visionnaire de la Mode Africaine</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="prose prose-lg max-w-none">
+                            <p class="text-gray-600 leading-relaxed mb-6">
+                                Passionné par l'excellence et l'innovation dans l'industrie de la mode, 
+                                je dédie ma carrière à l'élévation des talents africains sur la scène internationale. 
+                                Mon parcours m'a mené à créer des plateformes d'exception qui transforment 
+                                les rêves en réussites concrètes.
+                            </p>
+                            
+                            <p class="text-gray-600 leading-relaxed mb-6">
+                                En tant que CEO de ROYAL FASHION ÉVENT et directeur de MODEL ACADEMY MANAGEMENT, 
+                                j'ai eu le privilège d'accompagner des centaines de talents vers le succès. 
+                                Mon engagement va au-delà du business : c'est une mission de valorisation 
+                                du patrimoine culturel africain à travers la mode.
+                            </p>
+                            
+                            <p class="text-gray-600 leading-relaxed">
+                                Les AFRICA FASHION AWARDS représentent l'aboutissement de cette vision : 
+                                créer une reconnaissance mondiale pour l'excellence créative africaine et 
+                                inspirer les futures générations de créateurs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Key Values -->
+                <div class="mt-16">
+                    <h3 class="text-2xl font-bold text-wine mb-8 text-center">Mes Valeurs</h3>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="text-center p-6 bg-gray-50 rounded-xl">
+                            <div class="w-16 h-16 bg-wine text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-star text-2xl"></i>
+                            </div>
+                            <h4 class="text-lg font-semibold text-wine mb-2">Excellence</h4>
+                            <p class="text-gray-600 text-sm">
+                                Recherche constante de la perfection dans chaque projet et chaque collaboration.
+                            </p>
+                        </div>
+                        
+                        <div class="text-center p-6 bg-gray-50 rounded-xl">
+                            <div class="w-16 h-16 bg-wine text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-lightbulb text-2xl"></i>
+                            </div>
+                            <h4 class="text-lg font-semibold text-wine mb-2">Innovation</h4>
+                            <p class="text-gray-600 text-sm">
+                                Pionnier de nouvelles approches qui révolutionnent l'industrie de la mode africaine.
+                            </p>
+                        </div>
+                        
+                        <div class="text-center p-6 bg-gray-50 rounded-xl">
+                            <div class="w-16 h-16 bg-wine text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-handshake text-2xl"></i>
+                            </div>
+                            <h4 class="text-lg font-semibold text-wine mb-2">Intégrité</h4>
+                            <p class="text-gray-600 text-sm">
+                                Engagement authentique envers mes partenaires et les talents que j'accompagne.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Call to Action -->
+                <div class="mt-16 text-center bg-wine text-white p-12 rounded-2xl">
+                    <h3 class="text-2xl font-bold mb-4">Construisons Ensemble l'Avenir de la Mode</h3>
+                    <p class="text-xl mb-8 text-white/80">
+                        Rejoignez-moi dans cette aventure extraordinaire
+                    </p>
+                    <a href="#contact" class="inline-block bg-white text-wine px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all duration-300">
+                        Collaborons
                     </a>
                 </div>
             </div>
@@ -101,7 +202,7 @@
     <section id="projets" class="py-20 bg-gray-50">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-navy mb-6">Mes Projets</h2>
+                <h2 class="text-4xl md:text-5xl font-bold text-wine mb-6">Mes Projets</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
                     Découvrez les initiatives qui façonnent l'avenir de la mode africaine
                 </p>
@@ -111,15 +212,15 @@
                 
                 <!-- Model Academy Management -->
                 <div class="project-card bg-white rounded-2xl shadow-lg overflow-hidden group cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
-                    <div class="h-64 bg-gradient-to-br from-navy to-navy/80 flex items-center justify-center">
+                    <div class="h-64 bg-gradient-to-br from-wine to-wine/80 flex items-center justify-center">
                         <i class="fas fa-graduation-cap text-6xl text-white"></i>
                     </div>
                     <div class="p-8">
-                        <h3 class="text-2xl font-bold text-navy mb-4">MODEL ACADEMY MANAGEMENT</h3>
+                        <h3 class="text-2xl font-bold text-wine mb-4">MODEL ACADEMY MANAGEMENT</h3>
                         <p class="text-gray-600 mb-6 leading-relaxed">
                             Formation et management des talents de demain dans l'industrie de la mode et du mannequinat.
                         </p>
-                        <a href="model-academy.html" class="inline-block bg-navy text-white px-6 py-3 rounded-full font-semibold hover:bg-navy/90 transition-colors duration-300">
+                        <a href="model-academy.html" class="inline-block bg-wine text-white px-6 py-3 rounded-full font-semibold hover:bg-wine/90 transition-colors duration-300">
                             En savoir plus
                         </a>
                     </div>
@@ -127,15 +228,15 @@
                 
                 <!-- Royal Fashion Event -->
                 <div class="project-card bg-white rounded-2xl shadow-lg overflow-hidden group cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
-                    <div class="h-64 bg-gradient-to-br from-navy to-navy/80 flex items-center justify-center">
+                    <div class="h-64 bg-gradient-to-br from-wine to-wine/80 flex items-center justify-center">
                         <i class="fas fa-crown text-6xl text-white"></i>
                     </div>
                     <div class="p-8">
-                        <h3 class="text-2xl font-bold text-navy mb-4">ROYAL FASHION ÉVENT</h3>
+                        <h3 class="text-2xl font-bold text-wine mb-4">ROYAL FASHION ÉVENT</h3>
                         <p class="text-gray-600 mb-6 leading-relaxed">
                             Organisation d'événements de mode prestigieux qui célèbrent l'excellence et l'innovation.
                         </p>
-                        <a href="royal-fashion.html" class="inline-block bg-navy text-white px-6 py-3 rounded-full font-semibold hover:bg-navy/90 transition-colors duration-300">
+                        <a href="royal-fashion.html" class="inline-block bg-wine text-white px-6 py-3 rounded-full font-semibold hover:bg-wine/90 transition-colors duration-300">
                             En savoir plus
                         </a>
                     </div>
@@ -143,15 +244,15 @@
                 
                 <!-- Africa Fashion Awards -->
                 <div class="project-card bg-white rounded-2xl shadow-lg overflow-hidden group cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
-                    <div class="h-64 bg-gradient-to-br from-navy to-navy/80 flex items-center justify-center">
+                    <div class="h-64 bg-gradient-to-br from-wine to-wine/80 flex items-center justify-center">
                         <i class="fas fa-trophy text-6xl text-white"></i>
                     </div>
                     <div class="p-8">
-                        <h3 class="text-2xl font-bold text-navy mb-4">AFRICA FASHION AWARDS</h3>
+                        <h3 class="text-2xl font-bold text-wine mb-4">AFRICA FASHION AWARDS</h3>
                         <p class="text-gray-600 mb-6 leading-relaxed">
                             Reconnaissance et célébration des talents exceptionnels de la mode africaine.
                         </p>
-                        <a href="africa-awards.html" class="inline-block bg-navy text-white px-6 py-3 rounded-full font-semibold hover:bg-navy/90 transition-colors duration-300">
+                        <a href="africa-awards.html" class="inline-block bg-wine text-white px-6 py-3 rounded-full font-semibold hover:bg-wine/90 transition-colors duration-300">
                             En savoir plus
                         </a>
                     </div>
@@ -165,7 +266,7 @@
         <div class="container mx-auto px-6">
             <div class="max-w-4xl mx-auto">
                 <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-bold text-navy mb-6">Contact</h2>
+                    <h2 class="text-4xl md:text-5xl font-bold text-wine mb-6">Contact</h2>
                     <p class="text-xl text-gray-600">
                         Prêt à collaborer ? Contactez-moi pour discuter de vos projets
                     </p>
@@ -177,24 +278,24 @@
                             <div>
                                 <label for="nom" class="block text-sm font-semibold text-gray-700 mb-2">Nom complet</label>
                                 <input type="text" id="nom" name="nom" required 
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent transition-all duration-300">
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-wine focus:border-transparent transition-all duration-300">
                             </div>
                             <div>
                                 <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">Email</label>
                                 <input type="email" id="email" name="email" required 
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent transition-all duration-300">
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-wine focus:border-transparent transition-all duration-300">
                             </div>
                         </div>
                         
                         <div>
                             <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">Message</label>
                             <textarea id="message" name="message" rows="6" required 
-                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent transition-all duration-300 resize-none"></textarea>
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-wine focus:border-transparent transition-all duration-300 resize-none"></textarea>
                         </div>
                         
                         <div class="text-center">
                             <button type="submit" 
-                                class="bg-navy text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-navy/90 transition-all duration-300 transform hover:scale-105">
+                                class="bg-wine text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-wine/90 transition-all duration-300 transform hover:scale-105">
                                 Envoyer le message
                             </button>
                         </div>
@@ -205,7 +306,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-navy text-white py-12">
+    <footer class="bg-wine text-white py-12">
         <div class="container mx-auto px-6">
             <div class="text-center">
                 <div class="mb-8">

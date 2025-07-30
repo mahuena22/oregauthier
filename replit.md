@@ -8,6 +8,14 @@ This is a French-language professional portfolio website for ORE IBOUKOUN GAUTHI
 
 Preferred communication style: Simple, everyday language.
 
+## Recent Changes
+
+### Design Updates (July 30, 2025)
+- Changed color scheme from navy blue to wine red (#722F37)
+- Updated typography from Inter to Montserrat font family
+- Applied changes across all HTML files and CSS styling
+- Updated Tailwind CSS configuration in all project pages
+
 ## System Architecture
 
 ### Frontend Architecture
@@ -33,8 +41,8 @@ Preferred communication style: Simple, everyday language.
 - Consistent branding across all pages
 
 ### Styling System
-- **Color Scheme**: Navy (#0B1A2F) as primary brand color
-- **Typography**: Inter font family with multiple weights (300-700)
+- **Color Scheme**: Wine red (#722F37) as primary brand color
+- **Typography**: Montserrat font family with multiple weights (300-700)
 - **Responsive Design**: Mobile-first approach using Tailwind CSS
 - **Animations**: Custom fade-in animations and smooth transitions
 
@@ -58,7 +66,7 @@ This is a static website with no backend or database. All content is embedded di
 
 ### CDN Resources
 - **Tailwind CSS**: `https://cdn.tailwindcss.com` - CSS framework
-- **Google Fonts**: Inter font family and Font Awesome icons
+- **Google Fonts**: Montserrat font family and Font Awesome icons
 - **Font Awesome**: `https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css`
 
 ### Browser Requirements

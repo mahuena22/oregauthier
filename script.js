@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Scroll to top functionality
     let scrollToTopBtn = document.createElement('button');
     scrollToTopBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
-    scrollToTopBtn.className = 'fixed bottom-8 right-8 bg-navy text-white w-12 h-12 rounded-full shadow-lg hover:bg-navy/90 transition-all duration-300 z-40 opacity-0 pointer-events-none';
+    scrollToTopBtn.className = 'fixed bottom-8 right-8 bg-wine text-white w-12 h-12 rounded-full shadow-lg hover:bg-wine/90 transition-all duration-300 z-40 opacity-0 pointer-events-none';
     scrollToTopBtn.setAttribute('aria-label', 'Retour en haut');
     document.body.appendChild(scrollToTopBtn);
     
